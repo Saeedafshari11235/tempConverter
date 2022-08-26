@@ -13,3 +13,7 @@ fieldset{
     border-radius: 1rem;
     text-align: center;
 }
+legend{
+    font-size: 2rem;
+    font-weight: 900;
+}
