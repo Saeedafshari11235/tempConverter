@@ -5,7 +5,7 @@ let change = document.querySelector("#change")
 let convert = document.querySelector("#convert")
 let flag = 1
 clear.addEventListener("click",function(){
-
+    inp.value = ""
 })
 convert.addEventListener("click",function(){
 
