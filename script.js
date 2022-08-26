@@ -10,11 +10,13 @@ clear.addEventListener("click",function(){
 })
 convert.addEventListener("click",function(){
     let temp = inp.value
-    if(flag%2==0){
-        ans.innerHTML = temp+"°F → "+((temp-32)*5/9)+"°C"
-    }
-    else{
-        ans.innerHTML = temp+"°C → "+(temp*9.5+32)+"°F"
+    if(temp.isInteger()){
+        if(flag%2==0){
+            ans.innerHTML = temp+"°F → "+((temp-32)*5/9)+"°C"
+        }
+        else{
+            ans.innerHTML = temp+"°C → "+((temp*9/5)+32)+"°F"
+        }
     }
 })
 change.addEventListener("click",function(){
