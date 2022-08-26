@@ -1,5 +1,6 @@
 let inp = document.querySelector("#temp")
 let ttl = document.querySelector("legend")
+let ans = document.querySelector("#ans")
 let clear = document.querySelector("#clear")
 let change = document.querySelector("#change")
 let convert = document.querySelector("#convert")
@@ -8,7 +9,13 @@ clear.addEventListener("click",function(){
     inp.value = ""
 })
 convert.addEventListener("click",function(){
-    
+    let temp = inp.value
+    if(flag%2==0){
+        ans.innerHTML = temp+"°F → "+((temp-32)*5/9)+"°C"
+    }
+    else{
+        ans.innerHTML = temp+"°C → "+(temp*9.5+32)+"°F"
+    }
 })
 change.addEventListener("click",function(){
     flag++
