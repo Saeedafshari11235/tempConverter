@@ -37,4 +37,10 @@ button{
     border-radius: 1rem;
     color: #fff;
     border: 3px #fff solid;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #fff;
+    color: #763289;
 }
