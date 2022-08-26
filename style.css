@@ -13,6 +13,9 @@ fieldset{
     border: 4px #fff solid;
     border-radius: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 legend{
     font-size: 2rem;
