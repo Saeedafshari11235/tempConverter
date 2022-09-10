@@ -10,7 +10,7 @@ clear.addEventListener("click",function(){
 })
 convert.addEventListener("click",function(){
     let temp = inp.value
-    if(Number(temp)){
+    if(!isNaN(temp)){
         if(flag%2==0){
             ans.innerHTML = temp+"°F → "+((temp-32)*5/9)+"°C"
         }
